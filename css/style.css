@@ -178,7 +178,7 @@
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    padding: 35px 15px;
+    padding: 25px 15px;
     color: var(--bs-white) !important;
     font-size: 17px;
     font-weight: 400;
@@ -192,7 +192,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--bs-white) !important;
+    color: var(--bs-primary) !important;
 }
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--bs-white) !important;
@@ -316,7 +316,7 @@
         height: 0;
         bottom: -1px;
         left: 0;
-        background: var(--bs-primary);
+        /* background: var(--bs-primary); */
         transition: .5s;
         z-index: -1;
     }
