@@ -1,3 +1,23 @@
+:root {
+    --bs-primary: #f66315;
+    --bs-secondary: #2148a4;
+    --bs-dark: #212529;
+    --bs-light: #F8F9FA;
+    --bs-white: #FFFFFF;
+    --bs-black: #000000;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -67,7 +87,9 @@
 }
 
 .btn.btn-primary {
-    box-shadow: inset 0 0 0 0 var(--bs-primary);
+    box-shadow: inset 0 0 0 0 var(--bs-secondary);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
 }
 
 .btn.btn-primary:hover {
@@ -169,11 +191,19 @@
     color: var(--bs-dark) !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link:hover {
     color: var(--bs-white) !important;
 }
-
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-white) !important;
+    border-bottom: 4px solid var(--bs-primary);
+}
+.navbar-light.sticky-top .navbar-nav .nav-link.active {
+    color: var(--bs-black) !important;
+}
+.navbar-light .navbar-nav .nav-link.active::before {
+    background-color: unset;
+}
 .navbar-light .navbar-brand h1 {
     color: var(--bs-white);
 }
@@ -364,7 +394,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 68%));
     background-size: cover;
 }
 
