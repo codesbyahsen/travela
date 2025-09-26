@@ -9,12 +9,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Our Offices</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.png" />
-    <link rel="manifest" href="assets/images/favicons/favicon.png" />
+    <link rel="manifest" href="assets/images/favicons/favicon.png" /> -->
     <meta name="description" content="Dtravel HTML Template For Tour" />
 
     <!-- fonts -->
@@ -214,204 +214,237 @@
                 <div class="page-header-bg-overly"></div>
                 <div class="container">
                     <div class="page-header__top-inner">
-                        <h2>Contact Us</h2>
+                        <h2>Our Offices</h2>
                     </div>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
 
-        <!--Contact Page Start-->
-        <section class="contact-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="contact-page__right">
-                            <div class="comment-form">
-                                <form action="" class="comment-one__form contact-form-validated">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="name"
-                                                    placeholder="Your name" name="name">
-                                                <label for="name">Your name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="number" class="form-control" id="phoneNumber"
-                                                    placeholder="Phone Number" name="phoneNumber">
-                                                <label for="phoneNumber">Phone Number</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="city" placeholder="City"
-                                                    name="city">
-                                                <label for="city">City</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <select class="form-select ps-3" id="requestType"
-                                                    aria-label="Request Type">
-                                                    <option value="" selected>Select request Type</option>
-                                                    <option value="1">Umrah</option>
-                                                    <option value="2">Flight</option>
-                                                    <option value="3">Hotel</option>
-                                                    <option value="4">Visa</option>
-                                                    <option value="5">Insurance</option>
-                                                    <option value="6">Tour</option>
-                                                    <option value="7">Others</option>
-                                                </select>
-                                                <label for="requestType">Request Type</label>
-                                            </div>
-                                        </div>
-
-                                        <!-- Passenger Section (Keep as-is, no floating labels needed) -->
-                                        <div class="col-md-12 my-2" id="passengerSection" style="display:none;">
-                                            <h5 class="mb-2">Passenger</h5>
-                                            <div class="passenger-selector justify-content-between">
-                                                <div class="passenger-group adult-group">
-                                                    <h6>Adult *</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="adult">-</button>
-                                                        <input type="number" class="w-100" id="adult" value="1" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="adult">+</button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="passenger-group child-group">
-                                                    <h6>Child</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="child">-</button>
-                                                        <input type="number" class="w-100" id="child" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="child">+</button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="passenger-group infant-group">
-                                                    <h6>Infant</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="infant">-</button>
-                                                        <input type="number" class="w-100" id="infant" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="infant">+</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Email (optional)" name="email">
-                                                <label for="email">Email (optional)</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <textarea class="form-control" id="message"
-                                                    placeholder="Message (optional)" name="message"
-                                                    style="height: 100px"></textarea>
-                                                <label for="message">Message (optional)</label>
-                                            </div>
-                                            <div class="text-md-end">
-                                                <button type="submit" class="btn btn-danger thm-btn">Send a
-                                                    message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="result"></div><!-- /.result -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--Contact Page End-->
-
-        <!--Information Start-->
-        <section class="information">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="information__text">
-                                <p>Online Chat Support <br> Send your queries online</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-phone-call"></span>
-                            </div>
-                            <div class="information__text">
-                                <p>Call Us <br> +92-332-332-2251</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="tel:+92-666-888-0000" class="information__number-1">WhatsApp</a>
-                                    <br>
-                                    <a href="tel:666-888-0000" class="information__number-2">+92-332-332-2251</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-at"></span>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="mailto:info@Dtravelcompany.com" class="information__mail-1">E-Mail</a> <br>
-                                    <a href="mailto:info@tevily.com" class="information__mail-2">hello@dtravel.pk</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Information End-->
-
         <!--Google Map Start-->
         <section class="contact-page-google-map mb-4">
             <div class="container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6805.781321470599!2d74.2808667!3d31.5514342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919034c9bd45d07%3A0x908bff9b6741d9e9!2sDtravel.pk%20(Dastagir%20Travel%20%7C%20Travel%20Agency%20in%20Lahore%20%7C%20Umrah%20%26%20Hajj%20Packages%202025)!5e0!3m2!1sen!2s!4v1727271912345!5m2!1sen!2s"
-                    class="contact-page-google-map__one" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="offices mb-5">
+                    <div class="accordion custom-accordion my-4" id="officeAccordion">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <span class="accordion-title"><img class="pe-2"
+                                            src="assets/images/resources/lahore-minare-pakistan.png"
+                                            alt="Lahore Image">Head
+                                        Office Lahore</span>
+                                    <span class="icon"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#officeAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Address</h5>
+                                                <p>35 Civic Center, Moon Market, Gulshan-e-Ravi Lahore, Pakistan</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Business Hours</h5>
+                                                <p>Monday to Saturday / 10:00am to 07:00pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Phone</h5>
+                                                <p>+92-332-332-2251</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Email</h5>
+                                                <p>hello@dtravel.pk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6805.781321470599!2d74.2808667!3d31.5514342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919034c9bd45d07%3A0x908bff9b6741d9e9!2sDtravel.pk%20(Dastagir%20Travel%20%7C%20Travel%20Agency%20in%20Lahore%20%7C%20Umrah%20%26%20Hajj%20Packages%202025)!5e0!3m2!1sen!2s!4v1727271912345!5m2!1sen!2s"
+                        class="contact-page-google-map__one" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="offices mb-5">
+                    <div class="accordion custom-accordion my-4" id="officeAccordion2">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <span class="accordion-title"><img class="pe-2"
+                                            src="assets/images/resources/mazare-jinnah-karachi.png"
+                                            alt="Lahore Image">Karachi office</span>
+                                    <span class="icon"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#officeAccordion2">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Address</h5>
+                                                <p>Plot No. 14-C, Mezzanine No. 1, Lane No. 7, Zamzama Commercial Area,
+                                                    DHA Phase 5, Karachi</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Business Hours</h5>
+                                                <p>Monday to Saturday / 10:00am to 07:00pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Phone</h5>
+                                                <p>02133407507</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Email</h5>
+                                                <p>hello@dtravel.pk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.2374806511064!2d67.0402805!3d24.8176947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dde623bbc01%3A0x84a7343f078cb042!2sDtravel.pk%20(Dastagir%20Travel%20%7C%20Affordable%20Travel%20Agency%20in%20Karachi)%2014-C%20Neelam%20Lane%207%20Zamzama%20Commercial%20Area%20Defence%20V%20Karachi%2C%2075500%2C%20Pakistan!5e0!3m2!1sen!2s!4v169######!5m2!1sen!2s"
+                        class="contact-page-google-map__one" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" style="width:100%; height:300px; border:0;">
+                    </iframe>
+
+                </div>
+                <div class="offices mb-5">
+                    <div class="accordion custom-accordion my-4" id="officeAccordion3">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <span class="accordion-title"><img class="pe-2"
+                                            src="assets/images/resources/lahore-minare-pakistan.png"
+                                            alt="Lahore Image">DHA office</span>
+                                    <span class="icon"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#officeAccordion3">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Address</h5>
+                                                <p>Ground Floor, Plaza No.38, Block-K, Phase-1, DHA Lahore Cantt,
+                                                    Lahore.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Business Hours</h5>
+                                                <p>Monday to Saturday / 10:00am to 07:00pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Phone</h5>
+                                                <p>+92-332-332-2251</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Email</h5>
+                                                <p>hello@dtravel.pk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.578884219579!2d74.4329811!3d31.4690431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908c6c8fc245d%3A0x2a76c05fd5e21151!2sD%20Travel%20and%20Tours!5e0!3m2!1sen!2s!4v169%sometimestamp!5m2!1sen!2s"
+                        class="contact-page-google-map__one" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" style="width:100%; height:250px; border:0;">
+                    </iframe>
+
+
+                </div>
+                <div class="offices mb-5">
+                    <div class="accordion custom-accordion my-4" id="officeAccordion4">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <span class="accordion-title"><img class="pe-2"
+                                            src="assets/images/resources/lahore-minare-pakistan.png"
+                                            alt="Lahore Image">Raiwind office</span>
+                                    <span class="icon"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#officeAccordion4">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Address</h5>
+                                                <p>Opposite to Wapda Office, Main Kasur Road, Raja Jang.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Business Hours</h5>
+                                                <p>Monday to Saturday / 10:00am to 07:00pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Phone</h5>
+                                                <p>+92-332-332-2251</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address-main">
+                                                <h5>Email</h5>
+                                                <p>hello@dtravel.pk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120.7327609781121!2d74.2245159!3d31.2663456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919ad0fb4c3c239%3A0x5223584ea13763d5!2sLESCO%20Raiwind!5e0!3m2!1sen!2s!4v169xxxxxxx!5m2!1sen!2s"
+                        class="contact-page-google-map__one" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" style="width:100%; height:250px; border:0;">
+                    </iframe>
+
+
+                </div>
 
             </div>
 

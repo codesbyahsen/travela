@@ -2,20 +2,20 @@
 <html lang="en">
 
 
-<!-- Mirrored from tevily-html.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:43 GMT -->
+<!-- Mirrored from tevily-html.vercel.app/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:24 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Insurance</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.png" />
-    <link rel="manifest" href="assets/images/favicons/favicon.png" />
-    <meta name="description" content="Dtravel HTML Template For Tour" />
+    <link rel="manifest" href="assets/images/favicons/favicon.png" /> -->
+    <meta name="description" content="Dtravel Template" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/select2/select2.css">
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/tevily.css" />
@@ -152,8 +153,7 @@
                                                 <li><a class="dropdown-item" href="insurance.html">Book Travel
                                                         Insurance</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="insurance-rates.html">Travel
-                                                        Insurance Rate</a>
+                                                <li><a class="dropdown-item" href="insurance-rates.html">Travel Insurance Rate</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -164,8 +164,7 @@
                                                 Umrah
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="umrah-packages.html">Packages</a>
-                                                </li>
+                                                <li><a class="dropdown-item" href="umrah-packages.html">Packages</a></li>
                                                 <li><a class="dropdown-item" href="umrah-own-package.html">Make My Own
                                                         Packages</a></li>
                                             </ul>
@@ -179,10 +178,8 @@
                                                 E-Services
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="verified-reciept.html">Verify
-                                                        Receipt</a></li>
-                                                <li><a class="dropdown-item" href="print-my-booking.html">Print My
-                                                        Booking</a></li>
+                                                <li><a class="dropdown-item" href="verified-reciept.html">Verify Receipt</a></li>
+<li><a class="dropdown-item" href="print-my-booking.html">Print My Booking</a></li>
                                             </ul>
                                         </li>
 
@@ -213,211 +210,204 @@
                 </div>
                 <div class="page-header-bg-overly"></div>
                 <div class="container">
-                    <div class="page-header__top-inner">
-                        <h2>Contact Us</h2>
+                    <!-- Search Form -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body bg-light">
+                            <!-- Toggle Buttons -->
+                            <div class="text-center mb-4">
+                                <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" name="travelType" id="individual"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-toggle" for="individual">Individual</label>
+
+                                    <input type="radio" class="btn-check" name="travelType" id="family"
+                                        autocomplete="off">
+                                    <label class="btn btn-toggle" for="family">Family</label>
+                                </div>
+                            </div>
+
+                            <!-- Family Note -->
+                            <p class="note-text text-center d-none" id="family-note">
+                                <strong>Note:</strong> If any traveler is above 64 years old, apply for an individual
+                                policy. Family includes you, spouse, and up to 4 children (below 18). Enter primary
+                                traveler's name and DOB to continue.
+                            </p>
+
+                            <!-- Floating Labels Form -->
+                            <form>
+                                <div class="row g-2 align-items-end flight-row filght-row-border mb-3 mx-2">
+                                    <div class="col-md-4 mt-0 px-0">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control style-input bg-transparent" id="name"
+                                                placeholder="Your name">
+                                            <label for="name">Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control style-input bg-transparent"
+                                                id="areaType" placeholder="Area Type">
+                                            <label for="areaType">Area Type</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control style-input bg-transparent"
+                                                id="nic" placeholder="NIC No.">
+                                            <label for="nic">NIC No.</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-2 align-items-end flight-row filght-row-border mx-2">
+
+                                    <div class="col-md-4 mt-0 px-0 position-relative">
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="departure-insurance" placeholder="Departure">
+                                            <label for="departure">Departure</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="return-insurance" placeholder="Return">
+                                            <label for="return">Return</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="dob-insurance" placeholder="Date of Birth">
+                                            <label for="dob">Date of Birth</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-end mt-3">
+                                    <button type="submit" class="btn btn-danger thm-btn rounded px-4">Search</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
 
-        <!--Contact Page Start-->
-        <section class="contact-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="contact-page__right">
-                            <div class="comment-form">
-                                <form action="" class="comment-one__form contact-form-validated">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="name"
-                                                    placeholder="Your name" name="name">
-                                                <label for="name">Your name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="number" class="form-control" id="phoneNumber"
-                                                    placeholder="Phone Number" name="phoneNumber">
-                                                <label for="phoneNumber">Phone Number</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="city" placeholder="City"
-                                                    name="city">
-                                                <label for="city">City</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <select class="form-select ps-3" id="requestType"
-                                                    aria-label="Request Type">
-                                                    <option value="" selected>Select request Type</option>
-                                                    <option value="1">Umrah</option>
-                                                    <option value="2">Flight</option>
-                                                    <option value="3">Hotel</option>
-                                                    <option value="4">Visa</option>
-                                                    <option value="5">Insurance</option>
-                                                    <option value="6">Tour</option>
-                                                    <option value="7">Others</option>
-                                                </select>
-                                                <label for="requestType">Request Type</label>
-                                            </div>
-                                        </div>
+        <section>
+            <div class="container my-5">
+  <h3 class="mb-4 text-center">Best Insurance</h3>
+  
+  <div class="row g-4">
+    <!-- GOLDPLUS Card -->
+    <div class="col-12">
+      <div class="insurance-card d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Left Column: Logo and Badge -->
+         <img src="assets/images/resources/uic.png" width="161" height="91" alt="UIC Logo" class="mb-2 img-fluid">
+        <div class="me-md-3 text-center text-md-start" style="min-width: 120px;">
+          
+          <div>
+            <div class="insurance-badge">GOLDPLUS</div>
+            <div class="plan-type">(Premium)</div>
+            <div class="coverage-type">WORLDWIDE</div>
+            <div class="covid-covered">Covid Covered</div>
+          </div>
+        </div>
 
-                                        <!-- Passenger Section (Keep as-is, no floating labels needed) -->
-                                        <div class="col-md-12 my-2" id="passengerSection" style="display:none;">
-                                            <h5 class="mb-2">Passenger</h5>
-                                            <div class="passenger-selector justify-content-between">
-                                                <div class="passenger-group adult-group">
-                                                    <h6>Adult *</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="adult">-</button>
-                                                        <input type="number" class="w-100" id="adult" value="1" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="adult">+</button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="passenger-group child-group">
-                                                    <h6>Child</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="child">-</button>
-                                                        <input type="number" class="w-100" id="child" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="child">+</button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="passenger-group infant-group">
-                                                    <h6>Infant</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="infant">-</button>
-                                                        <input type="number" class="w-100" id="infant" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="infant">+</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Email (optional)" name="email">
-                                                <label for="email">Email (optional)</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <textarea class="form-control" id="message"
-                                                    placeholder="Message (optional)" name="message"
-                                                    style="height: 100px"></textarea>
-                                                <label for="message">Message (optional)</label>
-                                            </div>
-                                            <div class="text-md-end">
-                                                <button type="submit" class="btn btn-danger thm-btn">Send a
-                                                    message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="result"></div><!-- /.result -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- Middle Column: Benefits -->
+        <div class="flex-grow-1 mt-4 mt-md-0">
+          <div class="row row-cols-2">
+            <div class="col mb-2">
+              <div class="benefit-label">Medical Expenses & Hospitalization Abroad</div>
+              <div class="benefit-value">Rs 50,000.00</div>
             </div>
-        </section>
-        <!--Contact Page End-->
-
-        <!--Information Start-->
-        <section class="information">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="information__text">
-                                <p>Online Chat Support <br> Send your queries online</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-phone-call"></span>
-                            </div>
-                            <div class="information__text">
-                                <p>Call Us <br> +92-332-332-2251</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="tel:+92-666-888-0000" class="information__number-1">WhatsApp</a>
-                                    <br>
-                                    <a href="tel:666-888-0000" class="information__number-2">+92-332-332-2251</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-at"></span>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="mailto:info@Dtravelcompany.com" class="information__mail-1">E-Mail</a> <br>
-                                    <a href="mailto:info@tevily.com" class="information__mail-2">hello@dtravel.pk</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col mb-2">
+              <div class="benefit-label">Emergency Dental Care</div>
+              <div class="benefit-value">Rs 600.00</div>
             </div>
-        </section>
-        <!--Information End-->
-
-        <!--Google Map Start-->
-        <section class="contact-page-google-map mb-4">
-            <div class="container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6805.781321470599!2d74.2808667!3d31.5514342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919034c9bd45d07%3A0x908bff9b6741d9e9!2sDtravel.pk%20(Dastagir%20Travel%20%7C%20Travel%20Agency%20in%20Lahore%20%7C%20Umrah%20%26%20Hajj%20Packages%202025)!5e0!3m2!1sen!2s!4v1727271912345!5m2!1sen!2s"
-                    class="contact-page-google-map__one" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
+            <div class="col mb-2">
+              <div class="benefit-label">Loss of Passport</div>
+              <div class="benefit-value">Rs 300.00</div>
             </div>
+            <div class="col mb-2">
+              <div class="benefit-label">Compensation for In-Flight Loss</div>
+              <div class="benefit-value">Rs 400.00</div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Right Column: Pricing and Buttons -->
+        <div class="text-center text-md-end mt-4 mt-md-0" style="min-width: 180px;">
+          <div class="old-price">Rs 2,530.00</div>
+          <div class="new-price mb-2">Rs 2,150.50</div>
+          <a href="Insurance-buy.html" class="btn btn-buy mb-1">Buy Deal</a><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLATINUM Card -->
+    <div class="col-12">
+      <div class="insurance-card d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Left Column: Logo and Badge -->
+         <img src="assets/images/resources/uic.png" width="161" height="91" alt="UIC Logo" class="mb-2 img-fluid">
+        <div class="me-md-3 text-center text-md-start" style="min-width: 120px;">
+          
+          <div>
+            <div class="insurance-badge">PLATINUM</div>
+            <div class="plan-type">(Premium)</div>
+            <div class="coverage-type">WORLDWIDE</div>
+            <div class="covid-covered">Covid Covered</div>
+          </div>
+        </div>
+
+        <!-- Middle Column: Benefits -->
+        <div class="flex-grow-1 mt-4 mt-md-0">
+          <div class="row row-cols-2">
+            <div class="col mb-2">
+              <div class="benefit-label">Medical Expenses & Hospitalization Abroad</div>
+              <div class="benefit-value">Rs 50,000.00</div>
+            </div>
+            <div class="col mb-2">
+              <div class="benefit-label">Emergency Dental Care</div>
+              <div class="benefit-value">Rs 600.00</div>
+            </div>
+            <div class="col mb-2">
+              <div class="benefit-label">Loss of Passport</div>
+              <div class="benefit-value">Rs 300.00</div>
+            </div>
+            <div class="col mb-2">
+              <div class="benefit-label">Compensation for In-Flight Loss</div>
+              <div class="benefit-value">Rs 400.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Pricing and Buttons -->
+        <div class="text-center text-md-end mt-4 mt-md-0" style="min-width: 180px;">
+          <div class="old-price">Rs 2,530.00</div>
+          <div class="new-price mb-2">Rs 2,150.50</div>
+          <a href="insurance-buy.html" class="btn btn-buy mb-1">Buy Deal</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </section>
-        <!--Google Map End-->
-
         <!--Site Footer One Start-->
         <footer class="site-footer">
             <div class="site-footer__top">
@@ -673,16 +663,12 @@
     <script src="assets/vendors/vegas/vegas.min.js"></script>
     <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
     <script src="assets/vendors/timepicker/timePicker.js"></script>
-
-
-
-
-
+    <script src="assets/vendors/select2/select2.js"></script>
     <!-- template js -->
     <script src="assets/js/tevily.js"></script>
 </body>
 
 
-<!-- Mirrored from tevily-html.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:43 GMT -->
+<!-- Mirrored from tevily-html.vercel.app/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:24 GMT -->
 
 </html>

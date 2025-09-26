@@ -2,20 +2,20 @@
 <html lang="en">
 
 
-<!-- Mirrored from tevily-html.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:43 GMT -->
+<!-- Mirrored from tevily-html.vercel.app/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:24 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Insurance</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.png" />
-    <link rel="manifest" href="assets/images/favicons/favicon.png" />
-    <meta name="description" content="Dtravel HTML Template For Tour" />
+    <link rel="manifest" href="assets/images/favicons/favicon.png" /> -->
+    <meta name="description" content="Dtravel Template" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/select2/select2.css">
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/tevily.css" />
@@ -152,8 +153,7 @@
                                                 <li><a class="dropdown-item" href="insurance.html">Book Travel
                                                         Insurance</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="insurance-rates.html">Travel
-                                                        Insurance Rate</a>
+                                                <li><a class="dropdown-item" href="insurance-rates.html">Travel Insurance Rate</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -164,8 +164,7 @@
                                                 Umrah
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="umrah-packages.html">Packages</a>
-                                                </li>
+                                                <li><a class="dropdown-item" href="umrah-packages.html">Packages</a></li>
                                                 <li><a class="dropdown-item" href="umrah-own-package.html">Make My Own
                                                         Packages</a></li>
                                             </ul>
@@ -179,10 +178,8 @@
                                                 E-Services
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="verified-reciept.html">Verify
-                                                        Receipt</a></li>
-                                                <li><a class="dropdown-item" href="print-my-booking.html">Print My
-                                                        Booking</a></li>
+                                                <li><a class="dropdown-item" href="verified-reciept.html">Verify Receipt</a></li>
+<li><a class="dropdown-item" href="print-my-booking.html">Print My Booking</a></li>
                                             </ul>
                                         </li>
 
@@ -213,211 +210,398 @@
                 </div>
                 <div class="page-header-bg-overly"></div>
                 <div class="container">
-                    <div class="page-header__top-inner">
-                        <h2>Contact Us</h2>
+                    <!-- Search Form -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body bg-light">
+                            <!-- Toggle Buttons -->
+                            <div class="text-center mb-4">
+                                <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" name="travelType" id="individual"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-toggle" for="individual">Individual</label>
+
+                                    <input type="radio" class="btn-check" name="travelType" id="family"
+                                        autocomplete="off">
+                                    <label class="btn btn-toggle" for="family">Family</label>
+                                </div>
+                            </div>
+
+                            <!-- Family Note -->
+                            <p class="note-text text-center d-none" id="family-note">
+                                <strong>Note:</strong> If any traveler is above 64 years old, apply for an individual
+                                policy. Family includes you, spouse, and up to 4 children (below 18). Enter primary
+                                traveler's name and DOB to continue.
+                            </p>
+
+                            <!-- Floating Labels Form -->
+                            <form>
+                                <div class="row g-2 align-items-end flight-row filght-row-border mb-3 mx-2">
+                                    <div class="col-md-4 mt-0 px-0">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control style-input bg-transparent" id="name"
+                                                placeholder="Your name">
+                                            <label for="name">Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control style-input bg-transparent"
+                                                id="areaType" placeholder="Area Type">
+                                            <label for="areaType">Area Type</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control style-input bg-transparent"
+                                                id="nic" placeholder="NIC No.">
+                                            <label for="nic">NIC No.</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row g-2 align-items-end flight-row filght-row-border mx-2">
+
+                                    <div class="col-md-4 mt-0 px-0 position-relative">
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="departure-insurance" placeholder="Departure">
+                                            <label for="departure">Departure</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="return-insurance" placeholder="Return">
+                                            <label for="return">Return</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-4 mt-0 position-relative">
+                                        <div class="vertical-hr"></div>
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control style-input bg-transparent date-icon-set flight-detail"
+                                                id="dob-insurance" placeholder="Date of Birth">
+                                            <label for="dob">Date of Birth</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-end mt-3">
+                                    <a href="insurance-search.html" class="text-decoration-none"><button type="button" class="btn btn-danger thm-btn rounded px-4">Search</button></a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
 
-        <!--Contact Page Start-->
-        <section class="contact-page">
+
+        <!-- Most insurance start -->
+        <section class="container my-5">
+            <h5 class="mb-4 fw-semibold">Most Booked Travel Insurance</h5>
+            <div class="row g-3">
+                <!-- Schengen -->
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a href="insurance-country.html" class="text-decoration-none">
+                        <div class="insurance-card">
+                            <img src="https://flagcdn.com/w40/eu.png" alt="Schengen">
+                            <p class="insurance-label">Schengen Countries</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Turkey -->
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a href="insurance-country.html" class="text-decoration-none">
+                        <div class="insurance-card">
+                            <img src="https://flagcdn.com/w40/tr.png" alt="Turkey">
+                            <p class="insurance-label">Turkey</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- UAE -->
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a href="insurance-country.html" class="text-decoration-none">
+                        <div class="insurance-card">
+                            <img src="https://flagcdn.com/w40/ae.png" alt="UAE">
+                            <p class="insurance-label">U.A.E.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- United States -->
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a href="insurance-country.html" class="text-decoration-none">
+                        <div class="insurance-card">
+                            <img src="https://flagcdn.com/w40/us.png" alt="USA">
+                            <p class="insurance-label">United States</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Most insurance end -->
+        <!-- seo text section start -->
+        <section class="seo-text my-3 pt-4">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="contact-page__right">
-                            <div class="comment-form">
-                                <form action="" class="comment-one__form contact-form-validated">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="name"
-                                                    placeholder="Your name" name="name">
-                                                <label for="name">Your name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="number" class="form-control" id="phoneNumber"
-                                                    placeholder="Phone Number" name="phoneNumber">
-                                                <label for="phoneNumber">Phone Number</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="text" class="form-control" id="city" placeholder="City"
-                                                    name="city">
-                                                <label for="city">City</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box form-floating">
-                                                <select class="form-select ps-3" id="requestType"
-                                                    aria-label="Request Type">
-                                                    <option value="" selected>Select request Type</option>
-                                                    <option value="1">Umrah</option>
-                                                    <option value="2">Flight</option>
-                                                    <option value="3">Hotel</option>
-                                                    <option value="4">Visa</option>
-                                                    <option value="5">Insurance</option>
-                                                    <option value="6">Tour</option>
-                                                    <option value="7">Others</option>
-                                                </select>
-                                                <label for="requestType">Request Type</label>
-                                            </div>
-                                        </div>
+                <div class="seo-content-wrapper">
+                    <div class="seo-content collapsed" id="seoContent">
+                        <h2>Travel Insurance in Pakistan: Your Ultimate Guide</h2>
+                        <p>Travelling is always exciting – new adventures, cultural discoveries, and unforgettable
+                            memories. However, with the thrill of exploring new destinations also comes unexpected risks
+                            such as flight cancellations, lost baggage, medical emergencies, and travel delays. That’s
+                            where travel insurance steps in to provide peace of mind. Travel insurance ensures you are
+                            financially protected and supported in unforeseen circumstances, allowing you to fully enjoy
+                            your journey without unnecessary stress.</p>
+                        <p>In Pakistan, travel insurance is becoming increasingly important for both domestic and
+                            international trips. Whether you’re planning a family vacation, a business trip, or a solo
+                            adventure, a reliable travel insurance policy can save you from unexpected financial losses.
+                            This guide will help you understand the essentials of travel insurance, its benefits, types,
+                            and how to find the right plan in Pakistan.</p>
 
-                                        <!-- Passenger Section (Keep as-is, no floating labels needed) -->
-                                        <div class="col-md-12 my-2" id="passengerSection" style="display:none;">
-                                            <h5 class="mb-2">Passenger</h5>
-                                            <div class="passenger-selector justify-content-between">
-                                                <div class="passenger-group adult-group">
-                                                    <h6>Adult *</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="adult">-</button>
-                                                        <input type="number" class="w-100" id="adult" value="1" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="adult">+</button>
-                                                    </div>
-                                                </div>
+                        <h3>Why Travel Insurance is Essential in Pakistan</h3>
+                        <p>In Pakistan, many of the country’s reputable insurance companies now offer traveler-friendly
+                            policies that cover unforeseen circumstances, including medical emergencies, trip
+                            cancellations, and lost luggage. Since medical costs abroad can be extremely high, having
+                            travel insurance ensures you are not left in financial distress. Whether you are a student
+                            going abroad for studies, a family traveling for leisure, or a businessperson on work
+                            assignments, travel insurance is essential for all types of travelers.</p>
 
-                                                <div class="passenger-group child-group">
-                                                    <h6>Child</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="child">-</button>
-                                                        <input type="number" class="w-100" id="child" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="child">+</button>
-                                                    </div>
-                                                </div>
+                        <h3>Types Of Travel Insurance</h3>
+                        <h6>1. Individual Travel Insurance</h6>
+                        <p>This type of policy covers one person throughout the journey. It gives coverage designed for
+                            solo travelers. You can purchase individual travel insurance. It provides coverage and
+                            protection against a range of situations such as trip cancellations, medical emergencies,
+                            lost luggage, or accidental death. It’s ideal for individuals traveling for studies, work,
+                            or leisure.</p>
+                        <ul>
+                            <li><strong>Personalized Coverage:</strong> The policy is customized to individual needs and
+                                provides tailored financial protection. It makes it easier to include additional
+                                features, preferences, and requirements.</li>
+                            <li><strong>Safe Adventures:</strong> Individual plans ensure full focus and tailored
+                                coverage if you’re traveling for studies, work, or leisure, ensuring that your journey
+                                is worry-free.</li>
+                            <li><strong>Flexibility:</strong> Since it is focused on one person, individual travel
+                                insurance allows the traveler to have full control over coverage and a level of
+                                protection they need.</li>
+                        </ul>
 
-                                                <div class="passenger-group infant-group">
-                                                    <h6>Infant</h6>
-                                                    <div class="passenger-controls">
-                                                        <button type="button" class="decrement"
-                                                            data-type="infant">-</button>
-                                                        <input type="number" class="w-100" id="infant" value="0" min="0"
-                                                            readonly />
-                                                        <button type="button" class="increment"
-                                                            data-type="infant">+</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <h6>2. Family Travel Insurance</h6>
+                        <p>Family travel insurance plans are perfect when traveling as a group or family with a single
+                            package. Rather than buying individual policies for each member, a family plan provides
+                            affordable yet authentic travel insurance instead.</p>
+                        <ul>
+                            <li><strong>Cost-Effective:</strong> Family travel insurance is often cheaper than buying
+                                multiple individual policies for each family member.</li>
+                            <li><strong>Single Plan:</strong> Instead of managing multiple policies, one comprehensive
+                                policy covers the whole family.</li>
+                            <li><strong>Comprehensive Coverage:</strong> Family insurance plans cover medical
+                                emergencies, travel delays, baggage loss, and other inconveniences under a single
+                                policy.</li>
+                        </ul>
 
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Email (optional)" name="email">
-                                                <label for="email">Email (optional)</label>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <h6>3. Group Travel Insurance</h6>
+                        <p>Group travel insurance is tailored for groups of travelers who are journeying together,
+                            whether they are friends, colleagues, or part of an organization. Group travel insurance
+                            works like family travel insurance but is designed for unconnected individuals traveling
+                            together.</p>
+                        <ul>
+                            <li><strong>Collective Coverage:</strong> This type of insurance offers collective
+                                protection for all members of a group. It ensures that everyone in the group is included
+                                under a single policy.</li>
+                            <li><strong>Affordable Rates:</strong> Group insurance can be a cost-effective option for
+                                organizations, businesses, or student groups traveling together.</li>
+                            <li><strong>Convenience:</strong> It simplifies the process of securing coverage for a group
+                                of people who are traveling together instead of each person obtaining separate policies,
+                                the entire group is covered under one contract.</li>
+                        </ul>
 
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box form-floating">
-                                                <textarea class="form-control" id="message"
-                                                    placeholder="Message (optional)" name="message"
-                                                    style="height: 100px"></textarea>
-                                                <label for="message">Message (optional)</label>
-                                            </div>
-                                            <div class="text-md-end">
-                                                <button type="submit" class="btn btn-danger thm-btn">Send a
-                                                    message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="result"></div><!-- /.result -->
+                        <h3>Benefits Of Travel Insurance</h3>
+                        <ul>
+                            <li><strong>Medical Coverage:</strong> Travel insurance covers medical expenses abroad
+                                during your trip, including hospitalization and emergency medical treatment.</li>
+                            <li><strong>Trip Cancellation Protection:</strong> It reimburses your expenses in case you
+                                have to cancel your plan due to a valid reason, such as illness or unforeseen events.
+                            </li>
+                            <li><strong>Baggage And Personal Belongings Coverage:</strong> This ensures compensation for
+                                lost, stolen, or damaged luggage and personal items.</li>
+                            <li><strong>Emergency Assistance:</strong> Most insurance companies offer 24/7 emergency
+                                assistance, ensuring that you have professional help when you need it most.</li>
+                            <li><strong>Repatriation Coverage:</strong> Some travel insurance policies cover the cost of
+                                evacuating you to the nearest suitable medical facility.</li>
+                        </ul>
+
+                        <h3>How to Consider When Choosing Travel Insurance</h3>
+                        <p>When choosing travel insurance, factors to consider include coverage options, the insurer’s
+                            reputation, and the scope of coverage. These elements can vary between policies, so it is
+                            crucial to compare before purchasing.</p>
+
+                        <h3>How to Obtain Travel Insurance in Pakistan</h3>
+                        <p>In Pakistan, getting travel insurance is simple. You can buy it online or offline through
+                            various insurance providers’ websites. The process is easy, requiring just a few details
+                            such as trip dates, destination, and traveler information. Many airlines and travel agencies
+                            also offer insurance options, which can be purchased while booking tickets.</p>
+
+                        <h3>Tips for Finding the Best Travel Insurance</h3>
+                        <ul>
+                            <li>Compare insurance plans: Research and compare multiple providers, read reviews, and
+                                check benefits to assess the policy’s inclusions and exclusions.</li>
+                            <li>Affordable Travel Insurance Options: With multiple insurance companies, you may consider
+                                cost-effective policies that still provide essential coverage.</li>
+                            <li>Tailored Plans: Insurance providers also offer customizable packages designed for
+                                specific travel requirements, making it easier to obtain the best value for money.</li>
+                        </ul>
+
+                        <h3>The Importance of Reading The Policy</h3>
+                        <p>Before purchasing, always read the policy details. Look for exclusions, limitations, delays
+                            caused by medical emergencies, and risks to make choices for health-conscious travelers.</p>
+
+                        <h3>Common Travel Insurance Misconceptions</h3>
+                        <ul>
+                            <li>Travel insurance is expensive – In reality, it is affordable and cost-effective.</li>
+                            <li>It is unnecessary – In fact, it offers vital financial protection.</li>
+                            <li>Travel insurance only covers medical issues – Modern policies are tailored to include a
+                                wide range of situations, including trip delays, lost luggage, and more.</li>
+                        </ul>
+
+                        <h3>Summary</h3>
+                        <p>Best Travel Insurance is a must-have for every traveller in Pakistan. It provides financial
+                            protection and peace of mind, allowing you to fully enjoy your adventures without worry.</p>
+                    </div>
+                    <div class="text-end">
+                        <button id="toggleSeoBtn" class="toggle-btn">See More <span
+                                class="arrow">&#9660;</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- seo text section end -->
+        <!-- company about trust section  -->
+        <section class="about-company mb-3">
+            <div class="container">
+                <div class="row g-3 text-center mt-3">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-3">
+                        <div class="p-3 bg-light rounded shadow-sm h-100">
+                            <i class="fas fa-tags fa-font-size"></i>
+                            <h6 class="fw-bold text-primary mb-1">Highest Discounts</h6>
+                            <p class="text-muted small mb-0">We provide best discounts on Travel Insurance</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-3">
+                        <div class="p-3 bg-light rounded shadow-sm h-100">
+                            <i class="fas fa-star fa-font-size"></i>
+                            <h6 class="fw-bold text-primary mb-1">Quality Vendors</h6>
+                            <p class="text-muted small mb-0">We work only with highest rated insurance companies</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-3">
+                        <div class="p-3 bg-light rounded shadow-sm h-100">
+                            <i class="fas fa-check-circle fa-font-size"></i>
+                            <h6 class="fw-bold text-primary mb-1">Fastest Issuance</h6>
+                            <p class="text-muted small mb-0">Speedy process from booking to issuance</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-3">
+                        <div class="p-3 bg-light rounded shadow-sm h-100">
+                            <i class="fas fa-comments fa-font-size"></i>
+                            <h6 class="fw-bold text-primary mb-1">Best Support</h6>
+                            <p class="text-muted small mb-0">Our support team is ready to serve you anytime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- company about trust section  -->
+        <!-- Faqs Section Start -->
+        <section>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="fw-bold">Frequently Asked Questions (FAQs)</h2>
+                    </div>
+                </div>
+                <div class="destinations-details__faq">
+                    <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                        <div class="accrodion active">
+                            <div class="accrodion-title">
+                                <h4>How can I apply for a tourist visa through Dtravel?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Applying for a tourist visa with D Travel is simple. Just provide us with the
+                                        necessary documents, and our team will handle the entire application process for
+                                        you.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Are tevily's Umrah packages customizable?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Yes, we offer customizable Umrah packages to suit your specific preferences and
+                                        requirements.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Can I book flights for multiple destinations through tevily?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Absolutely! D Travel allows you to book flights to multiple destinations, making
+                                        your travel plans more flexible.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4> What are the payment options available for booking through tevily.pk?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>We accept various payment methods, including credit/debit cards, bank transfers,
+                                        and mobile wallets, to ensure your convenience</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion last-chiled">
+                            <div class="accrodion-title">
+                                <h4>Is travel insurance provided with the international tour packages?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Yes, we offer optional travel insurance coverage for added peace of mind during
+                                        your international travels.</p>
+                                </div><!-- /.inner -->
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <!--Contact Page End-->
-
-        <!--Information Start-->
-        <section class="information">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="information__text">
-                                <p>Online Chat Support <br> Send your queries online</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-phone-call"></span>
-                            </div>
-                            <div class="information__text">
-                                <p>Call Us <br> +92-332-332-2251</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="tel:+92-666-888-0000" class="information__number-1">WhatsApp</a>
-                                    <br>
-                                    <a href="tel:666-888-0000" class="information__number-2">+92-332-332-2251</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3">
-                        <!--Information Single-->
-                        <div class="information__single">
-                            <div class="information__icon">
-                                <span class="icon-at"></span>
-                            </div>
-                            <div class="information__text">
-                                <h4>
-                                    <a href="mailto:info@Dtravelcompany.com" class="information__mail-1">E-Mail</a> <br>
-                                    <a href="mailto:info@tevily.com" class="information__mail-2">hello@dtravel.pk</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Information End-->
-
-        <!--Google Map Start-->
-        <section class="contact-page-google-map mb-4">
-            <div class="container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6805.781321470599!2d74.2808667!3d31.5514342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919034c9bd45d07%3A0x908bff9b6741d9e9!2sDtravel.pk%20(Dastagir%20Travel%20%7C%20Travel%20Agency%20in%20Lahore%20%7C%20Umrah%20%26%20Hajj%20Packages%202025)!5e0!3m2!1sen!2s!4v1727271912345!5m2!1sen!2s"
-                    class="contact-page-google-map__one" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
-            </div>
-
-        </section>
-        <!--Google Map End-->
-
+        <!-- Faqs Section end -->
         <!--Site Footer One Start-->
         <footer class="site-footer">
             <div class="site-footer__top">
@@ -673,16 +857,12 @@
     <script src="assets/vendors/vegas/vegas.min.js"></script>
     <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
     <script src="assets/vendors/timepicker/timePicker.js"></script>
-
-
-
-
-
+    <script src="assets/vendors/select2/select2.js"></script>
     <!-- template js -->
     <script src="assets/js/tevily.js"></script>
 </body>
 
 
-<!-- Mirrored from tevily-html.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:43 GMT -->
+<!-- Mirrored from tevily-html.vercel.app/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Sep 2025 05:31:24 GMT -->
 
 </html>
